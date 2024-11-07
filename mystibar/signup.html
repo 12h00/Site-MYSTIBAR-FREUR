@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="unfinished/style2.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet" />
+    <noscript>
+        <p style="color:red;font-size: x-large;">Your browser does not support JavaScript or it is disabled. Please enable JavaScript to continue.</p>
+        <style>.container { display:none; }</style>
+    </noscript>
+
+</head>
+<body style="background-color: #ff4d4d;">
+        
+    <div class="container">
+        <div class="form-wrapper">
+            <form class="sig-log-form" action="htbin/register.py" method="POST">
+                <h1>Créer un compte</h1>
+
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input id="lastname" name="lastname" type="text" placeholder="Entrer le Nom" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input id="firstname" name="firstname" type="text" placeholder="Entrer le Prénom" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-cake-candles"></i>
+                    <input id="birthdate" name="birthdate" placeholder="jj/mm/aaaa">
+                    <div class="error-message" id="birthdate-error">Date de naissance invalide.</div>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-circle-user"></i>
+                    <input id="username" name="username" type="text" placeholder="Entrer le Nom d'utilisateur" required>
+                    <div class="error-message" id="username-error">Doit contenir au moins six caractères.</div>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input id="userpwd" name="userpwd" type="password" placeholder="Entrer le Mot de passe" required>
+                    <div class="error-message" id="userpwd-error">Doit contenir au moins 8 caractères dont une majuscule,<br> une minuscule et un chiffre.</div>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input id="useremail" name="useremail" type="text" placeholder="Entrer l'Email" required>
+                    <div class="error-message" id="useremail-error">Adresse email invalide.</div>
+                </div>
+
+                <button type="submit">s'inscrire</button>
+                <br>
+                <div class="signin-link">
+                    Déjà un membre? <a href="login.html">Log In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="signup_script.js"></script>
+</body>
+</html>

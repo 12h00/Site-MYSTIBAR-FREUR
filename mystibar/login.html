@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="unfinished/style2.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet" />
+    <noscript>
+        <p style="color:red;font-size: x-large;">Your browser does not support JavaScript or it is disabled. Please enable JavaScript to continue.</p>
+        <style>.container { display:none; }</style>
+    </noscript>
+     <style>
+        body {
+            background-color: #ff4d4d;
+        }       
+    </style>
+</head>
+<body>
+    <nav>
+            
+        </nav>
+    <div class="container">
+        <div class="form-wrapper">
+            <form class="sig-log-form" action="htbin/login.py" method="POST">
+                <h1>Se connecter</h1>
+                <div class="input-group">
+                    <i class="fas fa-circle-user"></i>
+                    <input id="username" name="username" type="text" placeholder="Entrer le Nom d'utilisateur" required>
+                    <div class="error-message" id="username-error">votre nom d'utilisateur contient au moins 6 caractères.</div>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input id="userpwd" name="userpwd" type="password" placeholder="Entrer le Mot de passe" required>
+                    <div class="error-message" id="userpwd-error">vote mot de passe contenient au moins 8 caractères dont une majuscule, une minuscule et un chiffre.</div>
+                </div>
+             
+
+                <button type="submit">Se connecter</button>
+                <div class="signin-link">
+                    Première fois? <a href="signup.html">Register</a>
+                </div>
+            </form>
+        </div>
+        
+            
+    </div>
+
+    <script type="module" src="login_script.js"></script>
+</body>
+</html>
